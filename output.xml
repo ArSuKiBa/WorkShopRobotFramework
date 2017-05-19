@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170519 16:26:29.980" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\robotframework\epit.robot" id="s1" name="Epit">
+<test id="s1-t1" name="Confirm Logout">
+<kw name="Open browser to open forgot password page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://epit.rd.go.th/EFILING/RegController#</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20170519 16:26:30.127" level="INFO">Opening browser 'gc' to base url 'https://epit.rd.go.th/EFILING/RegController#'</msg>
+<status status="PASS" endtime="20170519 16:26:36.644" starttime="20170519 16:26:30.127"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=link_RegType1</arg>
+</arguments>
+<msg timestamp="20170519 16:26:36.646" level="INFO">Clicking element 'name=link_RegType1'.</msg>
+<status status="PASS" endtime="20170519 16:26:39.026" starttime="20170519 16:26:36.645"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:26:39.027" starttime="20170519 16:26:30.127"></status>
+</kw>
+<kw name="Confirm Logout">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=bExit</arg>
+</arguments>
+<msg timestamp="20170519 16:26:39.029" level="INFO">Clicking element 'name=bExit'.</msg>
+<status status="PASS" endtime="20170519 16:26:39.152" starttime="20170519 16:26:39.028"></status>
+</kw>
+<kw name="Confirm Action" library="Selenium2Library">
+<doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
+<status status="PASS" endtime="20170519 16:26:39.172" starttime="20170519 16:26:39.152"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:26:39.172" starttime="20170519 16:26:39.028"></status>
+</kw>
+<kw name="Back to first page">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>http://epit.rd.go.th/publish/index.php</arg>
+</arguments>
+<msg timestamp="20170519 16:26:40.351" level="INFO">Current location is 'http://epit.rd.go.th/publish/index.php'.</msg>
+<status status="PASS" endtime="20170519 16:26:40.351" starttime="20170519 16:26:39.175"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:26:40.351" starttime="20170519 16:26:39.174"></status>
+</kw>
+<tags>
+<tag>testing</tag>
+</tags>
+<status status="PASS" endtime="20170519 16:26:40.353" critical="yes" starttime="20170519 16:26:30.126"></status>
+</test>
+<status status="PASS" endtime="20170519 16:26:40.356" starttime="20170519 16:26:29.983"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">testing</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Epit" pass="1">Epit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

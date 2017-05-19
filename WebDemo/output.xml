@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170519 13:34:49.086" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\robotframework\WebDemo\BrowseFile.robot" id="s1" name="BrowseFile">
+<test id="s1-t1" name="Browse file">
+<kw name="Open browser to open Upload Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20170519 13:34:49.227" level="INFO">Opening browser 'firefox' to base url 'http://goo.gl/YE27iy'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170519 13:34:49.368" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20170519 13:34:49.368" starttime="20170519 13:34:49.336"></status>
+</kw>
+<msg timestamp="20170519 13:34:49.368" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20170519 13:34:49.399" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" endtime="20170519 13:34:49.399" starttime="20170519 13:34:49.227"></status>
+</kw>
+<status status="FAIL" endtime="20170519 13:34:49.399" starttime="20170519 13:34:49.227"></status>
+</kw>
+<status status="FAIL" endtime="20170519 13:34:49.399" critical="yes" starttime="20170519 13:34:49.227">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" endtime="20170519 13:34:49.414" starttime="20170519 13:34:49.086"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="BrowseFile" pass="0">BrowseFile</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170519 13:34:49.368" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+</errors>
+</robot>
